@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recordatorios - Cuidado e Higiene</title>
+  <link rel="stylesheet" href="../CSS/recordatorios.css" />
+</head>
+<body>
+
+  <div class="barra-cafe">
+    <div class="logo">
+      <img src="../IMAGEN/VaquitaSoft.png" alt="Logo" />
+    </div>
+    <div class="icono-usuario">
+      <img src="../IMAGEN/avatar.png" alt="Usuario" />
+    </div>
+  </div>
+
+  <nav class="barra-verde">
+    <a href="visualizarRegistroGanadoEmpleado.html">🐄 REGISTRO DE GANADO</a>
+    <a href="alimentosEmpleado.html">🍽️ ALIMENTOS</a>
+    <a href="registroCuidadoEmpleado.html" class="activo">🧴 CUIDADO E HIGIENE</a>
+    <a href="ventaEmpleado.html">💰 VENTA</a>
+  </nav>
+
+  <div class="contenido">
+    <div class="contenedor-botones">
+      <button class="btn-atras" onclick="window.history.back()">⟵</button>
+      <div class="botones-centro">
+        <button onclick="irRegistroCuidadoEmpleado()">REGISTRO DE CUIDADOS</button>
+        <button class="activo2">RECORDATORIOS</button>
+      </div>
+    </div>
+
+    <h2 class="titulo-recordatorios">RECORDATORIOS</h2>
+
+    <div class="tarjetas-recordatorios">
+      <div class="tarjeta">
+        <h3>PRÓXIMA FECHA DE BAÑOS:</h3>
+        <p id="fecha-banos">28/09/2025</p>
+      </div>
+
+      <div class="tarjeta">
+        <h3>PRÓXIMA FECHA DE TRATAMIENTOS:</h3>
+        <p id="fecha-tratamientos">28/09/2025</p>
+      </div>
+
+      <div class="tarjeta">
+        <h3>PRÓXIMA FECHA DE VACUNAS:</h3>
+        <p id="fecha-vacunas">28/09/2025</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../JavaScript/recordatorios.js"></script>
+</body>
+</html>
