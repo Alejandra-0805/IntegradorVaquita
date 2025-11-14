@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reporte de Registro</title>
+  <link rel="stylesheet" href="../CSS/reporteRegistro.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="../Imagen/VaquitaSoft.png" alt="logo" class="logo" />
+      <h1>REPORTE DE<br>REGISTRO</h1>
+    </header>
+
+    <section class="grafica">
+      <h2>GRÁFICA DE LOS REGISTROS</h2>
+      <canvas id="grafica" width="250" height="250"></canvas>
+    </section>
+
+    <section class="tabla">
+      <h2>TABLA DE DATOS GRÁFICA DE LOS REGISTROS</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>EVENTO</th>
+            <th>CANTIDAD</th>
+            <th>PORCENTAJE %</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-datos">
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../JavaScript/reporteRegistro.js"></script>
+</body>
+</html>
