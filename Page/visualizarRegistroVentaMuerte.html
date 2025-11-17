@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizar Registro Venta o Muerte</title>
+  <link rel="stylesheet" href="../CSS/visualizarRegistroVentaMuerte.css">
+</head>
+<body>
+
+  <header class="barra-cafe">
+    <div class="logo">
+      <img src="../Imagen/VaquitaSoft.png" alt="Logo VaquitaSoft">
+    </div>
+    <div class="icono-usuario">
+      <img src="../Imagen/avatar.png" alt="Usuario">
+    </div>
+  </header> 
+
+  <nav class="barra-verde">
+    <a href="visualizarRegistroGanado.html">🐄 REGISTRO DE GANADO</a>
+    <a href="alimentos.html">🍽️ ALIMENTOS</a>
+    <a href="cuidadoHigiene.html">🧴 CUIDADO E HIGIENE</a>
+    <a href="ventaAnimalesRegistradas.html">💰 VENTA</a>
+  </nav>
+
+  <section class="seccion-titulo">
+    <button class="btn-atras">←</button>
+    <button class="btn-registrar">VISUALIZAR REGISTRO</button>
+    <button class="btn-ver activo">REGISTRO DE VENTA O MUERTE</button>
+    <button class="btn-reporte">🗂️ GENERAR REPORTE</button>
+  </section>
+
+  <main class="contenido">
+    <table class="tabla-body" >
+      <thead>
+        <tr>
+          <th>NOMBRE</th>
+          <th>ID</th>
+          <th>SEXO</th>
+          <th>RAZA</th>
+          <th>FECHA NAC.</th>
+          <th>PESO FINAL</th>
+          <th>FECHA DE MUERTE O VENDIDO</th>
+          <th>ESTADO</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-body">
+        
+    </table>
+  </main>
+
+  <script src="../JavaScript/visualizarRegistroVentaMuerte.js"></script>
+</body>
+</html>
