@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agregar Intervención</title>
+  <link rel="stylesheet" href="../CSS/agregarIntervension.css" />
+</head>
+<body>
+
+  <div class="barra-cafe">
+    <div class="logo">
+      <img src="../IMAGEN/VaquitaSoft.png" alt="Logo" />
+    </div>
+    <div class="icono-usuario">
+      <img src="../IMAGEN/avatar.png" alt="Usuario" />
+    </div>
+  </div>
+
+  <nav class="barra-verde">
+    <a href="visualizarRegistroGanadoEmpleado.html"> REGISTRO DE GANADO</a>
+    <a href="alimentosEmpleado.html"> ALIMENTOS</a>
+    <a href="registroCuidadoEmpleado.html" class="activo"> CUIDADO E HIGIENE</a>
+    <a href="ventaEmpleado.html"> VENTA</a>
+  </nav>
+
+  <div class="contenido">
+
+    <div class="contenedor-botones">
+      <button class="btn-atras" onclick="window.history.back()">⟵</button>
+
+      <div class="botones-centro">
+        <button class="btn-agregar">AGREGAR INTERVENCIÓN</button>
+      </div>
+    </div>
+
+    <h2 class="titulo-intervencion">AGREGAR INTERVENCIÓN</h2>
+
+    <form id="formIntervencion" class="formulario-intervencion">
+
+      <label for="idAnimal">ID DEL ANIMAL:</label>
+      <input type="number" id="idAnimal" name="idAreteGanado" />
+
+      <label for="padecimiento">TIPO DE PADECIMIENTO:</label>
+      <input type="text" id="padecimiento" name="padecimiento" />
+
+      <label for="medicamento">NOMBRE DEL MEDICAMENTO:</label>
+      <select id="medicamento" name="idMedicamento">
+        <option value="">Seleccione un medicamento</option>
+        <option value="1">Ivermectina</option>
+        <option value="2">Penicilina</option>
+        <option value="3">Vitamina B</option>
+      </select>
+
+      <label for="descripcion">DESCRIPCIÓN DEL MEDICAMENTO:</label>
+      <input type="text" id="descripcion" />
+
+      <label for="dosis">DOSIS DEL MEDICAMENTO:</label>
+      <input type="number" id="dosis" name="dosis" />
+
+      <label for="fechaInicio">FECHA DE INICIO DEL TRATAMIENTO:</label>
+      <input type="date" id="fechaInicio" name="fechaInicio" />
+
+      <label for="fechaRecordatorio">PRÓXIMO RECORDATORIO:</label>
+      <input type="date" id="fechaRecordatorio" name="fechaRecordatorio" />
+
+      <button type="submit" class="btn-agregar">
+        <span>➕</span> AGREGAR
+      </button>
+    </form>
+
+  </div>
+
+  <script src="../JavaScript/agregarIntervension.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
+
